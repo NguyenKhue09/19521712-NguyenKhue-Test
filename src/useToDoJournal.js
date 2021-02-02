@@ -16,9 +16,8 @@ export default initialValue => {
             console.log(changeJournalId);
             setJournalData(changeJournalId);
         },
-        updateJournal: (journalIndex,value) =>{
-            journalList[journalIndex-1].name = value.name;
-            journalList[journalIndex-1].description = value.description;
+        updateJournal: (data) =>{
+            setJournalData(data);
         }   
     };
 };

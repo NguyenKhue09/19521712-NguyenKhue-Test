@@ -40,7 +40,7 @@ const JournalList = ({value,deleteJournal,updateJournal}) => {
         </div> */}
         <Route path={`${url}/:journalId`}>
           <div className="journal-detail">
-            <JournalDetail data={value} deleteJournal={deleteJournal} useUpdateJournal={useUpdateJournal} updateJournal={updateJournal}/>
+            <JournalDetail data={value} deleteJournal={deleteJournal} useUpdateJournal={useUpdateJournal} updateJournal={updateJournal} />
           </div>
         </Route>
       </div>

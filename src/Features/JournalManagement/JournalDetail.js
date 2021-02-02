@@ -1,6 +1,6 @@
 import React,{ useEffect, useState, useContext}from "react";
 import { useParams } from "react-router-dom";
-//import useToDoJournal from '../../useToDoJournal'
+import useToDoJournal from '../../useToDoJournal'
 
 
 const JournalDetail = ({data, deleteJournal, useUpdateJournal,updateJournal}) => {
@@ -21,8 +21,8 @@ const JournalDetail = ({data, deleteJournal, useUpdateJournal,updateJournal}) =>
     }
     
   }
-  //const {updateJournal} = useToDoJournal(data);
-  const { value, onChangeName, onChangeDescription } = useUpdateJournal(data,journalId);
+  const {journalList} = useToDoJournal(data);
+  const { value , dataJournal, onChangeName, onChangeDescription } = useUpdateJournal(journalList,journalId);
   console.log(value);
   
   return (
@@ -60,7 +60,7 @@ const JournalDetail = ({data, deleteJournal, useUpdateJournal,updateJournal}) =>
             <button
              className="button-save-journal"
              onClick= {() =>{
-              updateJournal(journalId,value) ;
+              updateJournal(dataJournal) ;
              }}
              disabled={journal ? false : true}
             >Save</button>
@@ -69,8 +69,6 @@ const JournalDetail = ({data, deleteJournal, useUpdateJournal,updateJournal}) =>
             }} 
             disabled={journal ? false : true}
             >Delete</button>
-          </div>
-          <div>
           </div>
         </div>
       </div>
