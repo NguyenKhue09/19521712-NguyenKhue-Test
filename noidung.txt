@@ -1,0 +1,15 @@
+Chức năng của trang web: thêm mới, xem chi tiết, xóa, cập nhật các journal
+
+Tổng quan:
+
+Trang all entries:
+
+	Hiển thị danh sách tất cả các journal title trong phần your entries.
+	Khi nhấp chọn một trong các mục trong Your entries thì thông tin chi tiết của journal sẽ hiện ra bên phần Detail, bao gồm 2 trường dữ liệu là Journal Title và Description.
+
+	Phần Detail có chức năng sửa dữ liệu và xóa  Journal hiện tại được chọn. 
+
+Trang New Journal:
+	Dùng để tạo Journal mới.
+
+Chức năng thêm, nâng cao: Login

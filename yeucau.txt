@@ -1,0 +1,25 @@
+File App.js
+1. Hai thẻ Link
+  thẻ đầu cho tới /my-journal
+  thẻ sau cho tới /new-journal
+2. Trong className="MainArea"
+  Sử dụng Switch và Route, exact, component
+  sao cho phù hợp
+  Tạo 4 routes
+  2.1: route / cho component JournalList 
+  2.2: route /my-journal cho component JournalList
+  2.3: route /new-journal cho component NewJournalForm
+  2.4: route /login cho component LoginPage
+
+3. Sau khi hiện UI - có thể tạo thêm vài UI khác như
+Button gì đó để demo theo các tiêu chí dưới link 
+4. Xem file .json để lấy data mẫu cho dynamic routing
+Có thể tự chế ra data riêng, miễn sao là dynamic routing
+
+5. Link tiêu chí - http://bit.ly/2L61WbW
+6. Kết hợp source code và các file notion.so + Google 
+ để làm
+
+7. Nói sơ nội dung trang web ở file noidung.txt
+nếu làm theo được hết thì quá ok, không thì cứ demo 
+đầy đủ tiêu chí là đủ 
